@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family: primary;
+
+}
+
+/* LINKS ------------------------------------------------------------------------------------------*/
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* FONTS ------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: primary;
+    src: url(font/marker2/gomarice_marker2.ttf);
+}
+
+@font-face {
+    font-family: secondary;
+    src: url(font/francois-one/francois-one.ttf);
+}
+
+/* HEADER -----------------------------------------------------------------------------------------*/
+
+.header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.head {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* HERO -------------------------------------------------------------------------------------------*/
+
+.hero-container {
+    display: grid;
+    grid-template-areas: 
+        'hero-1'
+        'hero-2';
+    grid-template-rows: 1fr 1fr;
+}
+
+.hero {
+    display: grid;
+    grid-gap: 8px;
+    width: 100%;
+    margin: 8px 0 0 0;
+}
+
+.hero-1 {
+    grid-area: hero-1;
+    grid-template-areas: 
+        'hero1 hero2';
+    grid-template-columns: 54% auto;
+}
+
+.hero-2 {
+    grid-area: hero-2;
+    grid-template-areas: 
+        'hero3 hero4';
+    grid-template-columns: auto 54%;
+}
+
+.hero1 {
+    grid-area: hero1;
+    width: 100%;
+}
+
+.hero2 {
+    grid-area: hero2;
+    width: 100%;
+    height: 100%;
+}
+
+.hero3 {
+    grid-area: hero3;
+    width: 100%;
+    height: 100%;
+}
+
+.hero4 {
+    grid-area: hero4;
+    width: 100%;
+}
+
+/* VALUE ------------------------------------------------------------------------------------------*/
+
+.value-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background-image: url(/img/value.jpg);
+    background-repeat: none;
+    background-size: 100%;
+    margin: 8px 0 8px 0;
+    padding: 20px 0 20px 0;
+}
+
+.value {
+    font-family: primary;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 15px #000000;
+}
+
+.value-1 {
+
+}
+
+.value-2 {
+    color:  #FBB03B;
+}
+
+/* SOCIAL -----------------------------------------------------------------------------------------*/
+
+.social-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 80px;
+    background-color: #0D3E83;
+    margin: 0 0 8px 0;
+}
+
+.social {
+    display: grid;
+    grid-template-areas: 
+    'ig fb gg';
+    grid-template-columns: 100px 100px 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.instagram {
+    grid-area: ig;
+    width: 40px;
+}
+
+.facebook {
+    grid-area: fb;
+    width: 40px;
+}
+
+.google {
+    grid-area: gg;
+    width: 40px;
+}
+
+/* MENU -------------------------------------------------------------------------------------------*/
+
+.menu-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+}
+
+/* CONTACT ----------------------------------------------------------------------------------------*/
+
+.contact-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background-image: url(img/footer.jpg);
+    background-repeat: none;
+    background-size: 100%;
+}
+
+.location {
+    width: 80%;
+    margin: 50px 0 0 0;
+}
+
+.map {
+    border: 0;
+    width: 100%;
+    height: 350px;
+}
+
+.contact {
+    display: grid;
+    grid-template-areas: 
+    'email-i email';
+    align-items: center;
+    justify-items: center;
+    margin: 35px 0 35px 0;
+}
+
+.email-icon {
+    grid-area: email-i;
+}
+
+.email-icon img {
+    width: 35px;
+}
+
+.email {
+    grid-area: email;
+    font-family: secondary;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 0 0 0 20px;
+}
+
+/* FOOTER -----------------------------------------------------------------------------------------*/
+
+.footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #0D3E83;
+    font-family: secondary;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
