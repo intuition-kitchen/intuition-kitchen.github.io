@@ -100,6 +100,7 @@ a {
     align-items: center;
     justify-items: center;
     width: 100%;
+    height: 135px;
     background-image: url(/img/value.jpg);
     background-repeat: none;
     background-size: 100%;
@@ -111,11 +112,8 @@ a {
     font-family: primary;
     font-size: 24px;
     letter-spacing: 2px;
+    text-align: center;
     text-shadow: 2px 2px 15px #000000;
-}
-
-.value-1 {
-
 }
 
 .value-2 {
@@ -172,34 +170,37 @@ a {
 
 /* CONTACT ----------------------------------------------------------------------------------------*/
 
-.contact-container {
+.location-container {
     display: grid;
     align-items: center;
     justify-items: center;
     width: 100%;
-    background-image: url(img/footer.jpg);
+    background-image: url(img/map.jpg);
     background-repeat: none;
     background-size: 100%;
 }
 
 .location {
     width: 80%;
-    margin: 50px 0 0 0;
+    margin: 30px 0 30px 0;
 }
 
 .map {
     border: 0;
     width: 100%;
-    height: 350px;
+    height: 340px;
 }
 
-.contact {
+.contact-container {
     display: grid;
     grid-template-areas: 
     'email-i email';
     align-items: center;
     justify-items: center;
-    margin: 35px 0 35px 0;
+    background-image: url(img/contact.jpg);
+    background-repeat: none;
+    background-size: 100%;
+    padding: 20px;
 }
 
 .email-icon {
@@ -215,7 +216,6 @@ a {
     font-family: secondary;
     font-size: 20px;
     letter-spacing: 2px;
-    margin: 0 0 0 20px;
 }
 
 /* FOOTER -----------------------------------------------------------------------------------------*/
@@ -230,4 +230,91 @@ a {
     font-family: secondary;
     font-size: 14px;
     letter-spacing: 1px;
+}
+
+/* MEDIA QUERIES ----------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 420px) {
+    .value-container {
+        height: 120px;
+    }
+    
+    .value {
+        font-size: 22px;
+    }
+    
+    .map {
+        height: 300px;
+    }
+
+    .footer {
+        height: 45px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .value-container {
+        height: 115px;
+    }
+    
+    .value {
+        font-size: 20px;
+    }
+
+    .map {
+        height: 290px;
+    }
+    
+    .email {
+        letter-spacing: 1px;
+    }
+
+    .footer {
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .value-container {
+        height: 100px;
+    }
+    
+    .value {
+        font-size: 18px;
+    }
+
+    .map {
+        height: 260px;
+    }
+
+    .email-icon img {
+        width: 30px;
+    }
+
+    .email {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .value-container {
+        height: 90px;
+    }
+    
+    .value {
+        font-size: 16px;
+    }
+
+    .map {
+        height: 240px;
+    }
+
+    .email-icon img {
+        width: 25px;
+    }
+
+    .email {
+        font-size: 17px;
+    }
 }
