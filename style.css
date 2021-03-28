@@ -2,9 +2,15 @@ body {
     margin: 0;
     padding: 0;
     color:white;
-    font-family: primary;
-
 }
+
+/* LINKS ------------------------------------------------------------------------------------------*/
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 
 /* LINKS ------------------------------------------------------------------------------------------*/
 
@@ -17,15 +23,65 @@ a {
 
 @font-face {
     font-family: primary;
-    src: url(font/marker2/gomarice_marker2.ttf);
+    src: url(font/crimson-text.ttf);
 }
 
 @font-face {
     font-family: secondary;
-    src: url(font/francois-one/francois-one.ttf);
+    src: url(font/playfair-display.ttf);
 }
 
-/* HEADER -----------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: intuition;
+    src: url(font/gomarice_marker2.ttf);
+}
+
+@font-face {
+    font-family: extra;
+    src: url(font/francois-one.ttf);
+}
+
+/* HERO -------------------------------------------------------------------------------------------*/
+
+.hero {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--red);
+    text-decoration: none;
+}
 
 .header {
     display: grid;
@@ -34,287 +90,292 @@ a {
     width: 100%;
 }
 
-.head {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* HERO -------------------------------------------------------------------------------------------*/
-
-.hero-container {
-    display: grid;
-    grid-template-areas: 
-        'hero-1'
-        'hero-2';
-    grid-template-rows: 1fr 1fr;
-}
-
-.hero {
-    display: grid;
-    grid-gap: 8px;
-    width: 100%;
-    margin: 8px 0 0 0;
-}
-
-.hero-1 {
-    grid-area: hero-1;
-    grid-template-areas: 
-        'hero1 hero2';
-    grid-template-columns: 54% auto;
-}
-
-.hero-2 {
-    grid-area: hero-2;
-    grid-template-areas: 
-        'hero3 hero4';
-    grid-template-columns: auto 54%;
-}
-
-.hero1 {
-    grid-area: hero1;
+.header img {
     width: 100%;
 }
 
-.hero2 {
-    grid-area: hero2;
+.subheader {
     width: 100%;
-    height: 100%;
-}
-
-.hero3 {
-    grid-area: hero3;
-    width: 100%;
-    height: 100%;
-}
-
-.hero4 {
-    grid-area: hero4;
-    width: 100%;
-}
-
-/* VALUE ------------------------------------------------------------------------------------------*/
-
-.value-container {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    height: 135px;
-    background-image: url(/img/value.jpg);
-    background-repeat: none;
-    background-size: 100%;
-    margin: 8px 0 8px 0;
-    padding: 20px 0 20px 0;
-}
-
-.value {
-    font-family: primary;
-    font-size: 24px;
-    letter-spacing: 2px;
+    padding: 20px 0;
     text-align: center;
-    text-shadow: 2px 2px 15px #000000;
+    font-family: arial;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 
-.value-2 {
-    color:  #FBB03B;
+.sub1 {
+    background-color: #b35b09;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 10px 0;
 }
 
-/* SOCIAL -----------------------------------------------------------------------------------------*/
+.sub2 {
+    background-color: #333333;
+}
 
-.social-container {
+.sub3 {
+    background-color: #68923D;
+}
+
+.hosts {
     display: grid;
+    grid-template-areas: 
+        'rockbridge rockbridge-web rockbridge-fb rockbridge-ig'
+        'osceola osceola-web osceola-fb osceola-ig'
+        'intuition intuition-web intuition-fb intuition-ig';
+    grid-template-columns: auto 60px 55px 55px;
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-    justify-items: center;
-    height: 80px;
-    background-color: #0D3E83;
-    margin: 0 0 8px 0;
+    justify-items: start;
+    width: 100%;
+    padding: 10px 0 15px 0;
+    background-image: url(img/shenandoahs.jpg);
+    background-size: cover;
+    color: black;
+
+}
+
+.logo {
+    justify-self: start;
+    width: 180px;
+    padding: 10px 0 0 20px;
+}
+
+.rockbridge {
+    grid-area: rockbridge;
+}
+
+.osceola {
+    grid-area: osceola;
+}
+
+.intuition {
+    grid-area: intuition;
+}
+
+.pure {
+    grid-area: pure;
+}
+
+.website {
+    width: 40px;
+}
+
+.rockbridge-web {
+    grid-area: rockbridge-web;
+}
+
+.osceola-web {
+    grid-area: osceola-web;
+}
+
+.intuition-web {
+    grid-area: intuition-web;
+}
+
+.pure-web {
+    grid-area: pure-web;
 }
 
 .social {
-    display: grid;
-    grid-template-areas: 
-    'ig fb gg';
-    grid-template-columns: 100px 100px 100px;
-    align-items: center;
-    justify-items: center;
-}
-
-.instagram {
-    grid-area: ig;
     width: 40px;
 }
 
-.facebook {
-    grid-area: fb;
-    width: 40px;
+.rockbridge-fb {
+    grid-area: rockbridge-fb;
 }
 
-.google {
-    grid-area: gg;
-    width: 40px;
+.rockbridge-ig {
+    grid-area: rockbridge-ig;
 }
 
-/* MENU -------------------------------------------------------------------------------------------*/
-
-.menu-container {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
+.osceola-fb {
+    grid-area: osceola-fb;
 }
+
+.osceola-ig {
+    grid-area: osceola-ig;
+}
+
+.intuition-fb {
+    grid-area: intuition-fb;
+}
+
+.intuition-ig {
+    grid-area: intuition-ig;
+}
+
+.pure-fb {
+    grid-area: pure-fb;
+}
+
+.pure-ig {
+    grid-area: pure-ig;
+}
+
+
 
 .menu {
     width: 100%;
+    padding: 35px 0 0 0;
+    color: black;
+    text-align: center;
 }
 
-/* CONTACT ----------------------------------------------------------------------------------------*/
+.menu-item {
+    font-family: primary;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-.location-container {
-    display: grid;
-    align-items: center;
-    justify-items: center;
+.menu-descr {
+    font-family: secondary;
+    font-size: 14px;
+    padding: 20px 50px 10px 50px;
+}
+
+.menu-price {
+    font-family: primary;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 40px 0;
+}
+
+.menu-extra {
+    font-family: primary;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.menu-extra-last {
+    padding: 0 0 15px 0;
+}
+
+.menu1 {
+    grid-area: menu1;
+}
+
+.menu2 {
+    grid-area: menu2;
+}
+
+.menu3 {
+    grid-area: menu3
+}
+
+.menu4 {
+    grid-area: menu4;
+}
+
+.menu5 {
+    grid-area: menu5;
+}
+
+.menu6 {
+    grid-area: menu6;
+}
+
+.menu7 {
+    grid-area: menu7;
+}
+
+.kids {
+    padding: 10px 0 40px 0;
+}
+
+.band-pic {
     width: 100%;
-    background-image: url(img/map.jpg);
-    background-repeat: none;
-    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
-.location {
-    width: 80%;
-    margin: 30px 0 30px 0;
-}
-
-.map {
-    border: 0;
+.music {
+    background-color: #333333;
+    background-image: url(img/music.jpg);
+    background-size: cover;
     width: 100%;
-    height: 340px;
+    padding: 35px 0 35px 0;
+    text-shadow: 2px 1px black;
 }
 
-.contact-container {
+.band-name {
+    font-family: primary;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.band-feature {
+    font-family: secondary;
+    font-size: 14px;
+    text-align: center;
+    padding: 25px 50px 35px 50px;
+    text-align: justify;
+}
+
+.band-members {
     display: grid;
     grid-template-areas: 
-    'email-i email';
-    align-items: center;
-    justify-items: center;
-    background-image: url(img/contact.jpg);
-    background-repeat: none;
-    background-size: 100%;
-    padding: 20px;
+        'role1 member1'
+        'role2 member2'
+        'role3 member3';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px 20px;
 }
 
-.email-icon {
-    grid-area: email-i;
-}
-
-.email-icon img {
-    width: 35px;
-}
-
-.email {
-    grid-area: email;
-    font-family: secondary;
-    font-size: 20px;
+.role {
+    justify-self: end;
+    font-family: primary;
+    font-size: 14px;
     letter-spacing: 2px;
 }
 
-/* FOOTER -----------------------------------------------------------------------------------------*/
+.member {
+    font-family: secondary;
+    font-size: 14px;
+}
 
-.footer {
+.music-schedule {
     display: grid;
     align-items: center;
     justify-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: #0D3E83;
-    font-family: secondary;
-    font-size: 14px;
-    letter-spacing: 1px;
+    padding: 30px 0 0 0;
 }
 
-/* MEDIA QUERIES ----------------------------------------------------------------------------------*/
-
-@media only screen and (max-width: 420px) {
-    .value-container {
-        height: 120px;
-    }
-    
-    .value {
-        font-size: 22px;
-    }
-    
-    .map {
-        height: 300px;
-    }
-
-    .footer {
-        height: 45px;
-        font-size: 12px;
-    }
+.music-time {
+    background-color:#333333;
+    padding: 5px 15px;
+    font-family: primary;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: none;
 }
 
-@media only screen and (max-width: 390px) {
-    .value-container {
-        height: 115px;
-    }
-    
-    .value {
-        font-size: 20px;
-    }
-
-    .map {
-        height: 290px;
-    }
-    
-    .email {
-        letter-spacing: 1px;
-    }
-
-    .footer {
-        height: 40px;
-    }
+.covid {
+    display: grid;
+    grid-template-areas: 
+        'mask-i mask';
+    grid-template-columns: 100px auto;
+    align-items: center;
+    justify-items: start;
+    background-color: #757575;
+    padding: 20px;
 }
 
-@media only screen and (max-width: 370px) {
-    .value-container {
-        height: 100px;
-    }
-    
-    .value {
-        font-size: 18px;
-    }
-
-    .map {
-        height: 260px;
-    }
-
-    .email-icon img {
-        width: 30px;
-    }
-
-    .email {
-        font-size: 18px;
-    }
+.masks-i img {
+    height: 75px;
 }
 
-@media only screen and (max-width: 340px) {
-    .value-container {
-        height: 90px;
-    }
-    
-    .value {
-        font-size: 16px;
-    }
-
-    .map {
-        height: 240px;
-    }
-
-    .email-icon img {
-        width: 25px;
-    }
-
-    .email {
-        font-size: 17px;
-    }
+.thank-you {
+    background-color: #285a94;
+    font-family: primary;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-align: center;
 }
